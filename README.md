@@ -9,5 +9,7 @@ Due to space limitations, all open datasets (PTC,TPC-H and PTE) used in the expe
 
 MIMIC-3 can be obtained on [MIMIC-3](https://physionet.org/content/mimiciii/1.4/)
 
-## works file
+## Use infine (windows or linux)
+For windows, the folder ./exec/windows contains the infine.exe with the libraries coming from the mingw C++ compiler.
+For linux, the folder .exec/linux contains the infine.
 To use infine, a works file is required.
