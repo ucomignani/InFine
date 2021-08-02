@@ -14,6 +14,8 @@ MIMIC-3 can be obtained on [MIMIC-3](https://physionet.org/content/mimiciii/1.4/
 InFine runs on Windows and Linux OS. The Linux version of infine can be found in ./exec/linux.
 The Windows version of infine with the necessary libraries (g++ compiler mingw32) can be found in ./exec/windows.
 
+The file allResultsInFine.txt in ./exec/ contains our statistical results.
+
 **Remark:** Due to the double compatibility of OS, it is possible that some text files have to be re-encoding (unix2dos or dos2unix).
 
 ### Run experiments
