@@ -9,11 +9,16 @@ Due to space limitations, all open datasets (PTC,TPC-H and PTE) used in the expe
 
 MIMIC-3 can be obtained on [MIMIC-3](https://physionet.org/content/mimiciii/1.4/)
 
-## Running InFine
-### Reproducibility and repeatability 
-We provide all files we used in our experiments for PTE (works_PTE.txt), PTC (works_PTC.txt), and TPC-H (works_TPCH.txt) databases. Each works file is located in the corresponding datasets folder (for example, works_PTE.txt in datasets PTE folder, cf. [Datasets used in InFine experiments](https://drive.google.com/drive/folders/1wGparB08BihNU4J0TQOJvujt74KFy5jo?usp=sharing)).
+## Reproducibility and repeatability 
+### Running InFine
+InFine runs on Windows and Linux OS. The Linux version of infine can be found in ./exec/linux.
+The Windows version of infine with the necessary libraries (g++ compiler mingw32) can be found in ./exec/windows.
+
+**Remark:** Due to the double compatibility of OS, it is possible that some text files have to be re-encoding (unix2dos or dos2unix).
 
 ### Run experiments
+We provide all files we used in our experiments for PTE (works_PTE.txt), PTC (works_PTC.txt), and TPC-H (works_TPCH.txt) databases. Each works file is located in the corresponding datasets folder (for example, works_PTE.txt in datasets PTE folder, cf. [Datasets used in InFine experiments](https://drive.google.com/drive/folders/1wGparB08BihNU4J0TQOJvujt74KFy5jo?usp=sharing)).
+
 The command line to launch *InFine* prototype consists of either 1 parameter (name of file containing a jobs list) or 9 parameters (the description of a single job).
 
 A job is described by *DBName*, *TableORquery*, *dataInput1.csv*, *attrJoinId1*, *fdsInput1.txt*, *dataInput2.csv*, *attrJoinId2*, *fdsInput2.txt*, *nbRuns* where:
