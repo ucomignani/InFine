@@ -21,6 +21,9 @@ The file allResultsInFine.txt in ./exec/ contains our statistical results.
 ### Run experiments
 We provide all files we used in our experiments for PTE (works_PTE.txt), PTC (works_PTC.txt), and TPC-H (works_TPCH.txt) databases. Each works file is located in the corresponding datasets folder (for example, works_PTE.txt in datasets PTE folder, cf. [Datasets used in InFine experiments](https://drive.google.com/drive/folders/1wGparB08BihNU4J0TQOJvujt74KFy5jo?usp=sharing)).
 
+**Make sure that the path of file in the works file is valid**.
+
+#### Use InFine
 The command line to launch *InFine* prototype consists of either 1 parameter (name of file containing a jobs list) or 9 parameters (the description of a single job).
 
 A job is described by *DBName*, *TableORquery*, *dataInput1.csv*, *attrJoinId1*, *fdsInput1.txt*, *dataInput2.csv*, *attrJoinId2*, *fdsInput2.txt*, *nbRuns* where:
@@ -41,7 +44,7 @@ For example, the following file contains only one job description.
 	# "pte_atm|X|pte_drug"
 	PTE "pte_atm|X|pte_drug" pte_atm.csv    0 pte_atm_nulleq_efd.txt    pte_drug.csv   0 pte_drug_nulleq_efd.txt 10
 
-Infine's results are store in two types of files:
+#### Infine's results are store in two types of files
 1. a file named *DBname*_**results.txt** (PTE_results.txt for example) for statistics usage, one line is appended per run
 2. a file named *DBname_TableORquery*_**provFDs.txt** (PTE_pte_atm_JOIN_pte_drug_provFDs.txt, "|X|" are replaced by "_JOIN_" due to '|' character) for the provenance identification of valid FDs (only once for all runs).
 
