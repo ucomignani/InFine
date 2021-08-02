@@ -10,6 +10,10 @@ Due to space limitations, all open datasets (PTC,TPC-H and PTE) used in the expe
 MIMIC-3 can be obtained on [MIMIC-3](https://physionet.org/content/mimiciii/1.4/)
 
 ## Running InFine
+### Reproducibility 
+The reproducibility folder contains all files we used in our experiments for PTE (works_PTE.txt), PTC (works_PTC.txt) and TPC-H (works_TPCH.txt) batabases.
+
+### Run experiments
 The command line to launch *InFine* prototype consists of either 1 parameter (name of file containing a jobs list) or 9 parameters (the description of a single job).
 
 A job is described by *DBName*, *TableORquery*, *dataInput1.csv*, *attrJoinId1*, *fdsInput1.txt*, *dataInput2.csv*, *attrJoinId2*, *fdsInput2.txt*, *nbRuns* where:
